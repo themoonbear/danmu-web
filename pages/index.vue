@@ -5,7 +5,7 @@
     <v-flex
       xs12
       sm8
-      md6>
+      md6>     
       <v-card class="elevation-12">
         <v-card-title class="headline font-weight-regular blue white--text">直播地址</v-card-title>
         <v-card-text>
@@ -15,16 +15,18 @@
             hint="如：https://live.bilibili.com/123456"
             @keyup.enter="submit"/>          
         </v-card-text>
-      </v-card>
+      </v-card>     
     </v-flex>
-  </v-layout>
+  </v-layout>  
 </template>
 
 <script>
 export default {
   methods: {
     submit(event) {
-      alert(event.target.value)
+      let address = event.target.value
+      if (!address) return
+      this.$router.push({ path: '/' + this.$encodeAddress(address) })
     }
   }
 }

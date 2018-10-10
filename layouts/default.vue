@@ -30,8 +30,8 @@
         <v-subheader 
           two-line>已支持直播平台</v-subheader>
         <v-list-tile 
-          v-for="item in platforms" 
-          :key="item">
+          v-for="(item, i) in platforms" 
+          :key="i">
           <v-list-tile-content>
             <v-list-tile-title v-text="item"/>
           </v-list-tile-content>

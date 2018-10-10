@@ -11,6 +11,8 @@ if (nuxt.options.dev) {
 }
 
 module.exports = async (req, res) => {
-  await dispatch()
-    .dispatch('*', ['GET'], (req, res) => nuxt.render(req, res))(req, res)
+  await dispatch().dispatch('*', ['GET'], (req, res) => nuxt.render(req, res))(
+    req,
+    res
+  )
 }
