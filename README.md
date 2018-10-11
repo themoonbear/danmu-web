@@ -1,6 +1,6 @@
 # danmu-web
 
-> This is a danmu plugin of the obs
+> OBS 弹幕云插件
 
 ## Build Setup
 

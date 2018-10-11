@@ -1,7 +1,7 @@
 {
   "name": "danmu-web",
   "version": "1.0.0",
-  "description": "This is a danmu plugin of the obs",
+  "description": "OBS 弹幕云插件",
   "author": "themoonbear",
   "private": true,
   "scripts": {
