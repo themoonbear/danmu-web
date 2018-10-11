@@ -64,7 +64,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['@/plugins/utils'],
     /*
     ** You can extend webpack config here
     */
