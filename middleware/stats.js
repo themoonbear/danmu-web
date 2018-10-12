@@ -1,3 +1,1 @@
-export default function({ route }) {
-  console.log(route.fullPath)
-}
+export default function({ route }) {}

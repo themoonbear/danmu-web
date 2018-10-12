@@ -1,9 +1,12 @@
 <template>
-  <div/>
+  <div class="danmu"/>
 </template>
 
 <script>
-const DANMU_API = 'http://localhost:1323/danmu'
+const DANMU_API =
+  process.env.NODE_ENV !== 'production'
+    ? 'http://localhost:1323/danmu'
+    : 'https://api.moonbear.cn/danmu'
 export default {
   layout: 'danmu',
   async fetch({ app, route, store }) {

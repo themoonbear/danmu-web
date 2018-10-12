@@ -4,7 +4,7 @@ let intervalID = null
 export const mutations = {
   receive(state, msg) {
     queue.push(msg)
-    if(intervalID){
+    if (intervalID) {
       return
     }
     intervalID = setInterval(() => {
@@ -14,7 +14,11 @@ export const mutations = {
         intervalID = null
         return
       }
-      this.$toast.show(danmu, { position: 'top-left', duration: 10 * 1000 })
+      this.$toast.show(danmu, {
+        position: 'top-left',
+        duration: 10 * 1000,
+        containerClass: 'danmu'
+      })
     }, 1000)
   }
 }

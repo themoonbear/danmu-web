@@ -26,7 +26,7 @@ export default {
     submit(event) {
       let address = event.target.value
       if (!address) return
-      this.$router.push({ path: '/' + this.$encodeAddress(address) })
+      this.$router.push({ path: '/' + this.$utils.b64Encode(address) })
     }
   }
 }

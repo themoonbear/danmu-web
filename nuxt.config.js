@@ -36,7 +36,12 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: ['@/plugins/vuetify', '@/plugins/axios', '@/plugins/utils'],
+  plugins: [
+    { src: '@/plugins/vuetify', ssr: false },
+    { src: '@/plugins/axios', ssr: false },
+    { src: '@/plugins/utils', ssr: false },
+    { src: '@/plugins/baidu', ssr: false }
+  ],
   router: {
     middleware: 'stats'
   },
