@@ -19,7 +19,7 @@ export default ({ app: { router, $utils }, store }) => {
         '_trackEvent',
         'danmu',
         'play',
-        $utils(to.fullPath.substring(1))
+        $utils.b64Decode(to.fullPath.substring(1))
       ])
     }
   })
