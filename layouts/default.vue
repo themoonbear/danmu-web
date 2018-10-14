@@ -56,7 +56,13 @@
       :fixed="fixed"
       app
     >
-      <span>Copyright &copy; 2018 Moonbear Studio</span>
+      <v-flex
+        text-xs-center
+        white--text
+        xs12
+      >
+        <span>Copyright &copy; 2018 Moonbear Studio</span>
+      </v-flex>
     </v-footer>
   </v-app>
 </template>
