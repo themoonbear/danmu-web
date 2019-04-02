@@ -5,7 +5,7 @@
 <script>
 const DANMU_API =
   process.env.NODE_ENV !== 'production'
-    ? 'http://localhost:1323/danmu'
+    ? 'http://localhost:1324/danmu'
     : 'https://api.moonbear.cn/danmu'
 export default {
   layout: 'danmu',
